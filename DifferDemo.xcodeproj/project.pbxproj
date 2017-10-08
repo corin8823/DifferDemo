@@ -12,26 +12,23 @@
 		53A344831F8A8E07000751A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A344811F8A8E07000751A8 /* Main.storyboard */; };
 		53A344851F8A8E07000751A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A344841F8A8E07000751A8 /* Assets.xcassets */; };
 		53A344881F8A8E07000751A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A344861F8A8E07000751A8 /* LaunchScreen.storyboard */; };
-		53A344931F8A8E07000751A8 /* DifferDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A344921F8A8E07000751A8 /* DifferDemoTests.swift */; };
-		53A3449E1F8A8E07000751A8 /* DifferDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A3449D1F8A8E07000751A8 /* DifferDemoUITests.swift */; };
+		53A344AD1F8A8F8C000751A8 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344AC1F8A8F8C000751A8 /* Differ.framework */; };
+		53A344AF1F8A8F93000751A8 /* Differ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344AC1F8A8F8C000751A8 /* Differ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		53A3448F1F8A8E07000751A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53A344721F8A8E07000751A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53A344791F8A8E07000751A8;
-			remoteInfo = DifferDemo;
+/* Begin PBXCopyFilesBuildPhase section */
+		53A344B01F8A8F93000751A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				53A344AF1F8A8F93000751A8 /* Differ.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A3449A1F8A8E07000751A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53A344721F8A8E07000751A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53A344791F8A8E07000751A8;
-			remoteInfo = DifferDemo;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		53A3447A1F8A8E07000751A8 /* DifferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DifferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +38,7 @@
 		53A344841F8A8E07000751A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A344871F8A8E07000751A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53A344891F8A8E07000751A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53A3448E1F8A8E07000751A8 /* DifferDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53A344921F8A8E07000751A8 /* DifferDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferDemoTests.swift; sourceTree = "<group>"; };
-		53A344941F8A8E07000751A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53A344991F8A8E07000751A8 /* DifferDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53A3449D1F8A8E07000751A8 /* DifferDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferDemoUITests.swift; sourceTree = "<group>"; };
-		53A3449F1F8A8E07000751A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A344AC1F8A8F8C000751A8 /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,20 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53A3448B1F8A8E07000751A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53A344961F8A8E07000751A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				53A344AD1F8A8F8C000751A8 /* Differ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				53A3447C1F8A8E07000751A8 /* DifferDemo */,
-				53A344911F8A8E07000751A8 /* DifferDemoTests */,
-				53A3449C1F8A8E07000751A8 /* DifferDemoUITests */,
 				53A3447B1F8A8E07000751A8 /* Products */,
+				53A344AB1F8A8F8B000751A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				53A3447A1F8A8E07000751A8 /* DifferDemo.app */,
-				53A3448E1F8A8E07000751A8 /* DifferDemoTests.xctest */,
-				53A344991F8A8E07000751A8 /* DifferDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,22 +83,12 @@
 			path = DifferDemo;
 			sourceTree = "<group>";
 		};
-		53A344911F8A8E07000751A8 /* DifferDemoTests */ = {
+		53A344AB1F8A8F8B000751A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53A344921F8A8E07000751A8 /* DifferDemoTests.swift */,
-				53A344941F8A8E07000751A8 /* Info.plist */,
+				53A344AC1F8A8F8C000751A8 /* Differ.framework */,
 			);
-			path = DifferDemoTests;
-			sourceTree = "<group>";
-		};
-		53A3449C1F8A8E07000751A8 /* DifferDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				53A3449D1F8A8E07000751A8 /* DifferDemoUITests.swift */,
-				53A3449F1F8A8E07000751A8 /* Info.plist */,
-			);
-			path = DifferDemoUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +101,7 @@
 				53A344761F8A8E07000751A8 /* Sources */,
 				53A344771F8A8E07000751A8 /* Frameworks */,
 				53A344781F8A8E07000751A8 /* Resources */,
+				53A344B01F8A8F93000751A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,42 +111,6 @@
 			productName = DifferDemo;
 			productReference = 53A3447A1F8A8E07000751A8 /* DifferDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		53A3448D1F8A8E07000751A8 /* DifferDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53A344A51F8A8E07000751A8 /* Build configuration list for PBXNativeTarget "DifferDemoTests" */;
-			buildPhases = (
-				53A3448A1F8A8E07000751A8 /* Sources */,
-				53A3448B1F8A8E07000751A8 /* Frameworks */,
-				53A3448C1F8A8E07000751A8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53A344901F8A8E07000751A8 /* PBXTargetDependency */,
-			);
-			name = DifferDemoTests;
-			productName = DifferDemoTests;
-			productReference = 53A3448E1F8A8E07000751A8 /* DifferDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		53A344981F8A8E07000751A8 /* DifferDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53A344A81F8A8E07000751A8 /* Build configuration list for PBXNativeTarget "DifferDemoUITests" */;
-			buildPhases = (
-				53A344951F8A8E07000751A8 /* Sources */,
-				53A344961F8A8E07000751A8 /* Frameworks */,
-				53A344971F8A8E07000751A8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53A3449B1F8A8E07000751A8 /* PBXTargetDependency */,
-			);
-			name = DifferDemoUITests;
-			productName = DifferDemoUITests;
-			productReference = 53A344991F8A8E07000751A8 /* DifferDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,16 +125,6 @@
 					53A344791F8A8E07000751A8 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
-					};
-					53A3448D1F8A8E07000751A8 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 53A344791F8A8E07000751A8;
-					};
-					53A344981F8A8E07000751A8 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 53A344791F8A8E07000751A8;
 					};
 				};
 			};
@@ -221,8 +142,6 @@
 			projectRoot = "";
 			targets = (
 				53A344791F8A8E07000751A8 /* DifferDemo */,
-				53A3448D1F8A8E07000751A8 /* DifferDemoTests */,
-				53A344981F8A8E07000751A8 /* DifferDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,20 +157,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A3448C1F8A8E07000751A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53A344971F8A8E07000751A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,36 +169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A3448A1F8A8E07000751A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53A344931F8A8E07000751A8 /* DifferDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53A344951F8A8E07000751A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53A3449E1F8A8E07000751A8 /* DifferDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		53A344901F8A8E07000751A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53A344791F8A8E07000751A8 /* DifferDemo */;
-			targetProxy = 53A3448F1F8A8E07000751A8 /* PBXContainerItemProxy */;
-		};
-		53A3449B1F8A8E07000751A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53A344791F8A8E07000751A8 /* DifferDemo */;
-			targetProxy = 53A3449A1F8A8E07000751A8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53A344811F8A8E07000751A8 /* Main.storyboard */ = {
@@ -427,6 +303,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemo;
@@ -441,74 +321,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		53A344A61F8A8E07000751A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DifferDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferDemo.app/DifferDemo";
-			};
-			name = Debug;
-		};
-		53A344A71F8A8E07000751A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DifferDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferDemo.app/DifferDemo";
-			};
-			name = Release;
-		};
-		53A344A91F8A8E07000751A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DifferDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DifferDemo;
-			};
-			name = Debug;
-		};
-		53A344AA1F8A8E07000751A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DifferDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = corin8823.DifferDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DifferDemo;
 			};
 			name = Release;
 		};
@@ -529,24 +351,6 @@
 			buildConfigurations = (
 				53A344A31F8A8E07000751A8 /* Debug */,
 				53A344A41F8A8E07000751A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53A344A51F8A8E07000751A8 /* Build configuration list for PBXNativeTarget "DifferDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53A344A61F8A8E07000751A8 /* Debug */,
-				53A344A71F8A8E07000751A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53A344A81F8A8E07000751A8 /* Build configuration list for PBXNativeTarget "DifferDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53A344A91F8A8E07000751A8 /* Debug */,
-				53A344AA1F8A8E07000751A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
