@@ -20,6 +20,13 @@ extension Collection {
     }
 }
 
+extension Collection {
+
+    subscript(safe index: Index) -> Iterator.Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+
 extension Array where Element: Equatable {
 
     @discardableResult
@@ -42,4 +49,14 @@ extension Array where Element: Equatable {
         }
         return false
     }
+}
+
+func random(_ n: Int) -> String {
+    let a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    var s = ""
+    for _ in 0..<n {
+        let r = Int(arc4random_uniform(UInt32(a.count)))
+        s += String(a[a.index(a.startIndex, offsetBy: r)])
+    }
+    return s
 }

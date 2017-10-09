@@ -14,8 +14,8 @@ final class NormalViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var store = NormalStore()
-    var disposeBag = DisposeBag()
+    private var store = NormalStore()
+    private var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +25,15 @@ final class NormalViewController: UIViewController {
     }
 
     @objc func didTapAdd() {
-        NormalAction().add(str: "text")
+        NormalAction().add(str: random(10))
     }
 
     @objc func didTapDelete() {
-        NormalAction().delete(str: "text")
+        let strings = self.store.strings.value
+        let index = Int(arc4random_uniform(UInt32(strings.count)))
+        if let str = strings[safe: index] {
+            NormalAction().delete(str: str)
+        }
     }
 }
 
