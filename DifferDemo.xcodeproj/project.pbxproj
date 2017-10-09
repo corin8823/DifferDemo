@@ -14,6 +14,8 @@
 		53A344881F8A8E07000751A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A344861F8A8E07000751A8 /* LaunchScreen.storyboard */; };
 		53A344AD1F8A8F8C000751A8 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344AC1F8A8F8C000751A8 /* Differ.framework */; };
 		53A344AF1F8A8F93000751A8 /* Differ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344AC1F8A8F8C000751A8 /* Differ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53A344B21F8B0DFD000751A8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344B11F8B0DFB000751A8 /* RxSwift.framework */; };
+		53A344B41F8B0E14000751A8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A344B31F8B0E13000751A8 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,8 @@
 		53A344871F8A8E07000751A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53A344891F8A8E07000751A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A344AC1F8A8F8C000751A8 /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
+		53A344B11F8B0DFB000751A8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		53A344B31F8B0E13000751A8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A344B41F8B0E14000751A8 /* RxCocoa.framework in Frameworks */,
+				53A344B21F8B0DFD000751A8 /* RxSwift.framework in Frameworks */,
 				53A344AD1F8A8F8C000751A8 /* Differ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +92,8 @@
 		53A344AB1F8A8F8B000751A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53A344B31F8B0E13000751A8 /* RxCocoa.framework */,
+				53A344B11F8B0DFB000751A8 /* RxSwift.framework */,
 				53A344AC1F8A8F8C000751A8 /* Differ.framework */,
 			);
 			name = Frameworks;
